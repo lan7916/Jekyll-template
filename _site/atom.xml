@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>znan</title>
-  <link href="https://i-znan.github.io/atom.xml" rel="self" />
-  <link href="https://i-znan.github.io/"/>
-  <updated>2020-02-03T16:03:05+08:00</updated>
-  <id>https://i-znan.github.io</id>
+  <link href="https://znan.ml/atom.xml" rel="self" />
+  <link href="https://znan.ml/"/>
+  <updated>2020-02-08T16:31:40+08:00</updated>
+  <id>https://znan.ml</id>
   <author>
     <name></name>
     <email></email>
@@ -12,7 +12,7 @@
   
     <entry>
       <title>linux的QQ/微信使用快捷键</title>
-      <link href="https://i-znan.github.io/manjaro-deepin-wine-wechat.html" />
+      <link href="https://znan.ml/manjaro-deepin-wine-wechat.html" />
       <updated>2019-10-26T00:00:00+08:00</updated>
       <id>manjaro-deepin-wine-wechat</id>
       <summary type="text">前言
@@ -21,7 +21,7 @@
   
     <entry>
       <title>manjaro操作系统知识库</title>
-      <link href="https://i-znan.github.io/manjaro-wiki.html" />
+      <link href="https://znan.ml/manjaro-wiki.html" />
       <updated>2019-10-24T00:00:00+08:00</updated>
       <id>manjaro-wiki</id>
       <summary type="text">前言
@@ -30,7 +30,7 @@
   
     <entry>
       <title>解决github下载缓慢</title>
-      <link href="https://i-znan.github.io/get-github-files.html" />
+      <link href="https://znan.ml/get-github-files.html" />
       <updated>2019-10-19T00:00:00+08:00</updated>
       <id>get-github-files</id>
       <summary type="text">前言
@@ -39,7 +39,7 @@
   
     <entry>
       <title>windows-ssh运行脚本</title>
-      <link href="https://i-znan.github.io/windows-ssh-script.html" />
+      <link href="https://znan.ml/windows-ssh-script.html" />
       <updated>2019-08-12T00:00:00+08:00</updated>
       <id>windows-ssh-script</id>
       <summary type="text">起因
@@ -48,7 +48,7 @@
   
     <entry>
       <title>cpp-显式类型转换</title>
-      <link href="https://i-znan.github.io/cpp-type-transfer.html" />
+      <link href="https://znan.ml/cpp-type-transfer.html" />
       <updated>2019-08-11T00:00:00+08:00</updated>
       <id>cpp-type-transfer</id>
       <summary type="text">分类
@@ -57,7 +57,7 @@ c++存在四种显式类型转换，分别是</summary>
   
     <entry>
       <title>linux插入外置键盘禁用笔记本键盘</title>
-      <link href="https://i-znan.github.io/keyboard.html" />
+      <link href="https://znan.ml/keyboard.html" />
       <updated>2019-05-05T00:00:00+08:00</updated>
       <id>keyboard</id>
       <summary type="text">前言
@@ -66,7 +66,7 @@ c++存在四种显式类型转换，分别是</summary>
   
     <entry>
       <title>jekyll搭建github个人博客</title>
-      <link href="https://i-znan.github.io/jekyll-github-blog.html" />
+      <link href="https://znan.ml/jekyll-github-blog.html" />
       <updated>2019-05-01T00:00:00+08:00</updated>
       <id>jekyll-github-blog</id>
       <summary type="text">写在前面

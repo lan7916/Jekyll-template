@@ -21,10 +21,10 @@ kramdown:
 # emoji:
 #     src: 'https://api.fooleap.org'
 paginate: 10
-repository: i-znan/i-znan.github.io
+repository: znfang/znfang.github.io
 
 nickname: znan
-home: https://i-znan.github.io
+home: https://znan.ml
 # api: https://api.fooleap.org
 # IMG_PATH: //source.fooleap.org
 IMG_PATH: /img

@@ -10,6 +10,9 @@ tags: [留言]
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
 <div class="comment">
+<div class="comment-tips">
+  若要显示留言请先搭梯子。
+</div>
     <div id="disqus_thread" class="disqus-thread"></div>
 </div>
 <!-- disqus 评论框 end -->
