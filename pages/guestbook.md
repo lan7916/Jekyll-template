@@ -4,9 +4,6 @@ permalink: /guestbook.html
 title: 留言本
 tags: [留言]
 ---
-<!-- <div class="comment-guestbook">
-  <div id="comment"></div>
-</div> -->
 {% if site.disqus_on %}
   <!-- disqus 评论框 start -->
   <div class="comment">
