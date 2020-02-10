@@ -32,4 +32,5 @@ tongji: '9bb4bf149fca98f317e75329260f7961'
 analytics: 'UA-139257940-1'
 
 # Comments  disqus needs vpn
+disqus_on: false
 disqus_username: znfang
