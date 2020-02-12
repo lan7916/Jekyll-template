@@ -149,3 +149,10 @@ Icon=bclogo
 Categories=Office;
 MimeType=
 ```
+
+# 安装deb包
+```bash
+yay -S debtap # 安装debtap转换包，或者使用yaourt安装
+sudo debtap xxx.deb # 装换包，将deb转成pkg.tar.xz
+sudo pacman -U xxx.pkg.tar.xz # 安装转换后的包
+```
