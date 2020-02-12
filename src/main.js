@@ -526,7 +526,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         case '/life.html':
           cat = '生活';
           pageSize = 12;
-          postClass = 'post-life';
+          postClass = 'post-tech';
           break;
         case '/album.html':
           cat = '相册';
