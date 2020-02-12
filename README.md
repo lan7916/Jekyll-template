@@ -17,4 +17,4 @@ bundle install # 安装ruby的相关依赖，先需要安装ruby
 bundle exec jekyll server # 本地执行jekyll服务器
 ```
 # 参考
-具体操作可以参考[jekyll搭建github个人博客](https://i-znan.github.io/jekyll-github-blog.html)
+具体操作可以参考[jekyll搭建github个人博客](https://znan.ml/jekyll-github-blog.html)
