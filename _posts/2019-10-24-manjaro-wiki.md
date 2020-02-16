@@ -156,3 +156,11 @@ yay -S debtap # 安装debtap转换包，或者使用yaourt安装
 sudo debtap xxx.deb # 装换包，将deb转成pkg.tar.xz
 sudo pacman -U xxx.pkg.tar.xz # 安装转换后的包
 ```
+
+# 清理垃圾
+```bash
+sudo pacman -R $(pacman -Qdtq) # 清除系统中无用的包
+sudo pacman -Scc # 清除已下载的安装包
+sudo du -t 100M /var # 查看日志文件
+sudo journalctl --vacuum-size=50M # 删除制定大小日志文件
+```
