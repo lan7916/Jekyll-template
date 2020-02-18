@@ -8,7 +8,6 @@ tags:  "java thread"
 本文转载自[csdn博客-Java多线程编程](https://blog.csdn.net/evankaka/article/details/44153709)，但对其进行了整理
 
 # 1.说明
-- 本文所有的源码，均可在我的[github]()上获取
 - 本文涵盖内容：多线程使用方法、线程同步、线程数据传递、线程状态及相应的一些线程函数用法、概述等。
 - 线程的五个阶段：创建、就绪、运行、阻塞和终止
 - Java多线程实现三种方案：继承Thread类、实现Runnable接口和实现Callable接口并与Future、线程池结合使用。
