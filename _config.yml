@@ -24,7 +24,7 @@ paginate: 10
 repository: znfang/znfang.github.io
 
 nickname: znan
-home: https://znan.ml
+home: https://blog.znan.ml
 # api: https://api.fooleap.org
 # IMG_PATH: //source.fooleap.org
 IMG_PATH: /img
