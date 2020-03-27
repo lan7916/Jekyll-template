@@ -33,6 +33,7 @@ linux服务器一台，推荐centos7，并安装git，nodejs，nginx
 - deploy部署脚本
 - nginx配置文件修改
 - nat内网穿透（看情况是否需要内网穿透）
+
 ## webhook脚本
 在服务器端安装nodejs，并且新建一个目录，里面保存webhook脚本和自动化部署脚本
 ```bash
@@ -41,6 +42,7 @@ npm install gitee-webhook-handler --save # gitee webhook的处理js
 touch webhook.js # 创建webhook脚本
 vim webhook.js # 编辑webhook脚本
 ```
+
 在vim编辑器中输入以下内容
 ```javascript
 var http = require('http')
