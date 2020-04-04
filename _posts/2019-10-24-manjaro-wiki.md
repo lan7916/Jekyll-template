@@ -164,3 +164,17 @@ sudo pacman -Scc # 清除已下载的安装包
 sudo du -t 100M /var # 查看日志文件
 sudo journalctl --vacuum-size=50M # 删除制定大小日志文件
 ```
+
+# codeblocks
+codeblocks是一款跨平台的c++的IDE，据说很好用
+## 安装步骤
+- 从[官网](http://www.codeblocks.org/downloads/25)下载源码并解压
+- 进入到目录运行```sh ./configuration```会自动校验数据和依赖并生成makefile文件
+- 运行```sudo make & make install ```即可自动安装
+
+## 修改主题
+- 在.config/codeblocks目录下运行```touch CB_Colour_Themes.conf```
+- 在[官网](http://wiki.codeblocks.org/index.php/Syntax_highlighting_custom_colour_themes)拉到最下，并复制一大串的xml字符
+- 打开刚刚新建的文件并将复制的内容保存进去
+- terminal运行cb_share_config，记住一定要关掉codeblocks，选择刚刚的文件，并export all保存到.config/codeblocks目录下的default.conf文件中，记得一定要备份default.conf
+- 重新打开codeblocks，网上搜索就可以知道怎么换主题了
