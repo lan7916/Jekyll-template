@@ -2,7 +2,7 @@ encoding: utf-8
 port: 5678
 host: 0.0.0.0
 
-title: znan
+title: znfang
 keywords: [znfang, 后端, 算法, 杭州]
 description: '到底要做一个什么样的人？'
 
@@ -23,8 +23,8 @@ kramdown:
 paginate: 10
 repository: znfang/znfang.github.io
 
-nickname: znan
-home: http://blog.znan.ml
+nickname: znfang
+home: http://blog.znfang.ml
 # api: https://api.fooleap.org
 # IMG_PATH: //source.fooleap.org
 IMG_PATH: /img

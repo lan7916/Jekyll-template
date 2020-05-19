@@ -6,10 +6,10 @@ tags: [关于, 博客, znfang, blog]
 ---
 
 <!-- Language Selector -->
-<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)" style="height:32px">
+<!-- <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)" style="height:32px">
     <option value="0" selected> 中文 Chinese </option>
     <option value="1"> 英语 English </option>
-</select>
+</select> -->
 
 <!-- Chinese Version -->
 <div class="zh post-container">
@@ -58,7 +58,7 @@ tags: [关于, 博客, znfang, blog]
 </div>
 
 <!-- English Version -->
-<div class="en post-container">
+<!-- <div class="en post-container">
     <blockquote>
         Knives kill, so do words
     </blockquote>
@@ -94,10 +94,10 @@ tags: [关于, 博客, znfang, blog]
     <h3>Thanks</h3>
     <hr>
     <p>The theme of this blog is from <a href="https://blog.fooleap.org/" target="_blank">fooleap</a>. I like this simple and lively style very much. Thanks to Jekyll and Github pages.</p>   
-</div>
+</div> -->
 
 <!-- Handle Language Change -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
     function onLanChange(index){
@@ -110,6 +110,6 @@ tags: [关于, 博客, znfang, blog]
         }
     }
     onLanChange(0);
-</script>
+</script> -->
 
 
