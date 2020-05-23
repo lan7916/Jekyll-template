@@ -24,7 +24,7 @@ paginate: 10
 repository: znfang/znfang.github.io
 
 nickname: znfang
-home: http://blog.znfang.ml
+home: http://home.znfang.ml
 # api: https://api.fooleap.org
 # IMG_PATH: //source.fooleap.org
 IMG_PATH: /img
