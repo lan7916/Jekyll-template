@@ -8,7 +8,7 @@ title: 链接
 
 * [Github](https://github.com/znfang/)
 * [码云](https://gitee.com/znfang/)
-* [leetcode题解](http://leetcode-gitbook.znfang.ml)
+* [LeetCode题解](http://leetcode-gitbook.znfang.ml)
 
 ## 工具链接
 
