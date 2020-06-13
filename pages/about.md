@@ -11,7 +11,7 @@ tags: [关于, 博客, znfang, blog]
         知道越多，懂的越少
     </blockquote>
     <br>
-    <h3>Why blog?</h3>
+    <h3>WHY BLOG</h3>
     <hr>
     <p>生命总是由不同的细节构成的，学会记录生活细节，丰满人生。
     本博客自2019年5月1日起开始运行至今，共
@@ -33,17 +33,19 @@ tags: [关于, 博客, znfang, blog]
     {% endif %}
     .</p>
     <br>
-    <h3>Me</h3>
+    <h3>ABOUT ME</h3>
     <p>本科毕业于上海大学，研究生毕业于浙江大学</p>
     <p>目前在一家银行做后端开发</p>
     <p>浪费了太多的时间在选择上，该静下心来做点事情了</p>
     <br>
-    <h3>赞赏奖励</h3>
+    <h3>REWARD</h3>
         若您觉得鄙人所创造的内容对您有所帮助，可考虑略表心意，支持本博。
         以下是微信赞赏码：
-    <img src="/img/wechat-reward.png" style="width:150px" />
+    <div style="text-align: center;">
+       <img src="/img/wechat-reward.png" style="width:30%;margin:0 auto;" />
+    </div>
     <br>
-    <h3>Thanks</h3>
+    <h3>THANKS</h3>
     <hr>
     <p>本博客的主题来自<a href="https://blog.fooleap.org/" target="_blank">fooleap</a>，很喜欢这种简单明快的风格。感谢jekyll、github pages。</p>
 
