@@ -34,6 +34,7 @@ tags:  "LeetCode"
 # 滑动窗口
 ## 知识原理
 一般从第一个元素开始，一直往右一个一个元素移动，滑动窗口的可以固定，也可以变换，如图所示
+
 ![滑动窗口原理](https://hackernoon.com/photos/G9YRlqC9joZNTWsi1ul7tRkO6tv1-8i6d3wi0)
 
 ## 主要题解
@@ -77,6 +78,7 @@ tags:  "LeetCode"
 # 快慢指针
 ## 知识原理
 又叫龟兔赛跑，两个指针在数组或链表上的移动速度不一样，如图
+
 ![base](https://hackernoon.com/photos/G9YRlqC9joZNTWsi1ul7tRkO6tv1-suft3wtu)
 
 ## 题目辨析
@@ -101,6 +103,7 @@ tags:  "LeetCode"
 # 区间合并
 ## 知识原理
 用来处理有区间重叠问题，这个方法很高效，主要知识原理就看图了
+
 ![base](https://hackernoon.com/photos/G9YRlqC9joZNTWsi1ul7tRkO6tv1-8mh13wm9)
 
 ## 题解辨析
@@ -260,6 +263,7 @@ tags:  "LeetCode"
 - 再把第三个数加入到之前的集合中
 
 具体图解如下
+
 ![原理图](https://hackernoon.com/photos/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d)
 
 ## 主要题解
@@ -309,6 +313,7 @@ tags:  "LeetCode"
 - 遍历剩下的还没访问的元素，如果当前出来到的这个元素比堆顶元素大，那把堆顶元素先删除，再加当前元素进去
 
 原理如下
+
 ![原理图](https://hackernoon.com/photos/G9YRlqC9joZNTWsi1ul7tRkO6tv1-uuow3wb1)
 
 ## 主要题解
@@ -339,6 +344,7 @@ tags:  "LeetCode"
 4. 重复步骤2，3，直到处理完所有数字
 
 原理如下
+
 ![原理图](https://hackernoon.com/photos/G9YRlqC9joZNTWsi1ul7tRkO6tv1-4hwy3w8x)
 
 ## 主要题解
@@ -408,6 +414,7 @@ tags:  "LeetCode"
     - 重复上述过程，直到队列为空
 
 原理如图
+
 ![原理图](https://hackernoon.com/photos/G9YRlqC9joZNTWsi1ul7tRkO6tv1-ve1473wvg)
 
 ## 主要题解
