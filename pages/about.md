@@ -47,7 +47,7 @@ tags: [关于, 博客, znfang, blog]
     <br>
     <h3>THANKS</h3>
     <hr>
-    <p>本博客的主题来自<a href="https://blog.fooleap.org/" target="_blank">fooleap</a>，很喜欢这种简单明快的风格。感谢jekyll、github pages。</p>
+    <p>本博客的主题来自<a href="https://blog.fooleap.org/" target="_blank">fooleap</a>，很喜欢这种简单明快的风格。感谢Jekyll、GitHub Pages。</p>
 
 </div>
 
