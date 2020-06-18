@@ -6,7 +6,7 @@ category: tech
 tags:  "spring-boot java rabbitmq"
 ---
 # 说明
-重发机制是在mq中很重要的一部分，消费者可以通过ack或者nack就可以很轻松实现消息重新入队列，然后进行重发，但是生产者也有可能在网络动荡的情况下，投递不成功，这个时候就需要消息重发。虽然rabbitmq提供了事务功能，但是如果开启事务，就太影响性能了。本文利用spring-boot的定时功能，在本地缓存，从而实现对失败的消息进行重发。完整的项目代码请参考本人[spring-boot练习代码](https://github.com/znfang/spring-boot/tree/master/spring-boot-rabbitmq-retry)
+重发机制是在mq中很重要的一部分，消费者可以通过ack或者nack就可以很轻松实现消息重新入队列，然后进行重发，但是生产者也有可能在网络动荡的情况下，投递不成功，这个时候就需要消息重发。虽然rabbitmq提供了事务功能，但是如果开启事务，就太影响性能了。本文参考[littersmall的博文](https://www.jianshu.com/p/6579e48d18ae),利用spring-boot的定时功能，在本地缓存，从而实现对失败的消息进行重发。完整的项目代码请参考本人[spring-boot练习代码](https://github.com/znfang/spring-boot/tree/master/spring-boot-rabbitmq-retry)
 
 # 实现过程
 ## pom依赖
