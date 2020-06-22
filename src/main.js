@@ -318,7 +318,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
       var used = [];
       var counter = 0;
       var html = '';
-      while (counter < 5) {
+      console.log(posts.length)
+      while (counter < 5 && counter < posts.length) {// 这个地方有个bug，小于5的时候显示bug
         var index = Math.floor(Math.random() * posts.length);
         if (used.indexOf(index) == '-1') {
           html += '<li class="post-extend-item"><a class="post-extend-link" href="' + posts[index].url + '" title="' + posts[index].title + '">' + posts[index].title + '</a></li>\n';
@@ -495,7 +496,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     return num
   }
 
-  if (page.url == '/tech.html' || page.url == '/life.html' || page.url == '/album.html' || page.url == '/wiki.html') {
+  if (page.url == '/tech.html' || page.url == '/life.html' || page.url == '/wiki.html') {
     var pageNum = !!getQuery('page') ? parseInt(getQuery('page')) : 1;
     var postData, posts = [];
     var xhrPosts = new XMLHttpRequest();
@@ -528,10 +529,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
           pageSize = 12;
           postClass = 'post-tech';
           break;
-        case '/album.html':
-          cat = '相册';
-          postClass = 'post-album';
-          break;
         case '/wiki.html':
           cat = '知识库';
           postClass = 'post-wiki';
@@ -542,30 +539,17 @@ document.addEventListener('DOMContentLoaded', function (event) {
       var total = posts.length;
       var first = (pageNum - 1) * pageSize;
       var last = total > pageNum * pageSize ? pageNum * pageSize : total;
-      // if (page.url == '/life.html') {
-      //   for (var i = first; i < last; i++) {
-      //     var item = posts[i];
-      //     html += '<article class="post-item">' +
-      //       '    <i class="post-item-thumb" data-src="' + item.image + '" style="background-image:url(' + (item.image.indexOf('svg') > -1 ? item.image : item.image + '?imageView2/1/w/400/h/266') + ')"></i>' +
-      //       '    <section class="post-item-summary">' +
-      //       '    <h3 class="post-item-title"><a class="post-item-link" href="' + item.url + '" title="' + item.title + '">' + item.title + (item.images > 30 && item.category == 'life' ? '[' + item.images + 'P]' : '') + '</a></h3>' +
-      //       '    </section>' +
-      //       '    <section class="post-item-footer"><time class="post-item-date timeago" datetime="' + item.date + '"></time><a class="post-item-cmt" title="查看评论" href="' + item.url + '#comment"><span data-disqus-url="' + item.url + '"></span><span>条评论</span></a></section>' +
-      //       '</article>';
-      //   }
-      // } else {
-        for (var i = first; i < last; i++) {
-          var item = posts[i];
-          html += '<article class="post-item">' +
-            '    <i class="post-item-thumb" data-src="' + item.thumb + '" style="background-image:url(' + item.thumb + ')"></i>' +
-            '    <section class="post-item-summary">' +
-            '    <h3 class="post-item-title"><a class="post-item-link" href="' + item.url + '" title="' + item.title + '">' + item.title + (item.images > 30 && item.category == 'life' ? '[' + item.images + 'P]' : '') + '</a></h3>' +
-            '    <time class="post-item-date timeago" datetime="' + item.date + '"></time>' +
-            '    </section>' +
-            '    <a class="post-item-comment" title="查看评论" data-disqus-url="' + item.url + '" href="' + item.url + '#comment"></a>' +
-            '</article>';
-        }
-      // }
+      for (var i = first; i < last; i++) {
+        var item = posts[i];
+        html += '<article class="post-item">' +
+          '    <i class="post-item-thumb" data-src="' + item.thumb + '" style="background-image:url(' + item.thumb + ')"></i>' +
+          '    <section class="post-item-summary">' +
+          '    <h3 class="post-item-title"><a class="post-item-link" href="' + item.url + '" title="' + item.title + '">' + item.title + (item.images > 30 && item.category == 'life' ? '[' + item.images + 'P]' : '') + '</a></h3>' +
+          '    <time class="post-item-date timeago" datetime="' + item.date + '"></time>' +
+          '    </section>' +
+          '    <a class="post-item-comment" title="查看评论" data-disqus-url="' + item.url + '" href="' + item.url + '#comment"></a>' +
+          '</article>';
+      }
 
       var totalPage = Math.ceil(total / pageSize);
       var prev = pageNum > 1 ? pageNum - 1 : 0;
