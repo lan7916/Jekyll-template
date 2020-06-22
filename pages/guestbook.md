@@ -4,6 +4,20 @@ permalink: /guestbook.html
 title: 留言本
 tags: [留言]
 ---
+
+<div class="comment-tips">
+  各位看官请畅所欲言，但禁止违法，谢谢合作。
+</div>
+<div id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: "{{site.valine_appid}}",
+    appKey: "{{site.valine_appkey}}"
+  })
+</script>
+
 {% if site.disqus_on %}
   <!-- disqus 评论框 start -->
   <div class="comment">
@@ -26,5 +40,5 @@ tags: [留言]
   </script>
   <!-- disqus 公共JS代码 end -->
 {% else %}
-  <div class="comment-tips">评论留言功能已关闭</div>
+  <!-- <div class="comment-tips">评论留言功能已关闭</div> -->
 {% endif %}

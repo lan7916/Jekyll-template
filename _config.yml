@@ -34,3 +34,6 @@ analytics: 'UA-139257940-1'
 # Comments  disqus needs vpn
 disqus_on: false
 disqus_username: znfang
+
+valine_appid: CxEspSv5Qi04WQvJ6VtQEbao-gzGzoHsz
+valine_appkey: 1t0g3FX6K94RxyS7qL4saF30

@@ -8,6 +8,19 @@ layout: default
 {% include extend.html %}
 {% include info.html %}
 
+<div class="comment-tips">
+  与本文不相关的留言，请发<a href=/guestbook>留言版</a>谢谢。
+</div>
+<div id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: "{{site.valine_appid}}",
+    appKey: "{{site.valine_appkey}}"
+  })
+</script>
+
 {% if site.disqus_on %}
   <div class="comment-tips">
     若要显示留言请先搭梯子。与本文不相关的留言，请发<a href=/guestbook>留言版</a>谢谢。
@@ -34,5 +47,5 @@ layout: default
   </script>
   <!-- disqus 公共JS代码 end -->
 {% else %}
-  <div class="comment-tips">评论留言功能已关闭</div>
+  <!-- <div class="comment-tips">评论留言功能已关闭</div> -->
 {% endif %}
