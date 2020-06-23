@@ -301,11 +301,15 @@ document.addEventListener('DOMContentLoaded', function (event) {
           cats.push(item);
         }
       })
-      while (posts.length < 5) {
+      if(postData.length <= 5) {
+        posts = postData;
+        return posts;
+      }
+      while (posts.length < 5){
         var index = Math.floor(Math.random() * postData.length);
         var item = postData[index];
-        var condition = used.indexOf(index) == '-1' && item.url != location.pathname
-        if(cats.length >= 5) condition && item.category == cat
+        var condition = used.indexOf(index) == -1 && item.url != location.pathname
+        if(cats.length >= 5) condition = condition && item.category == cat
         if (condition) {
           posts.push(item);
           used.push(index);
@@ -318,10 +322,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
       var used = [];
       var counter = 0;
       var html = '';
-      console.log(posts.length)
-      while (counter < 5 && counter < posts.length) {// 这个地方有个bug，小于5的时候显示bug
+      while (counter < 5 && counter < posts.length) {
         var index = Math.floor(Math.random() * posts.length);
-        if (used.indexOf(index) == '-1') {
+        if (used.indexOf(index) == -1) {
           html += '<li class="post-extend-item"><a class="post-extend-link" href="' + posts[index].url + '" title="' + posts[index].title + '">' + posts[index].title + '</a></li>\n';
           used.push(index);
           counter++;
