@@ -2,6 +2,8 @@ jekyll的znfang主题，参考[fooleap博客](https://blog.fooleap.org)修改的
 
 集成了disqus和valine两种评论，具体可以看_config.yml配置
 
+效果请参考[本人博客](http://home.znfang.ml)
+
 # 使用
 ```bash
 git clone git@github.com:znfang/Jekyll-template.git
